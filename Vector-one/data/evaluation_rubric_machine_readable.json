@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "title": "AI Readiness Assessment"
+  },
+  "overview": [
+    {
+      "criterion": "Use Case Clarity & Alignment",
+      "description": "Assesses how clearly the AI use case is defined, including the business objective, success criteria, problem framing, and alignment with internal priorities. A well-scoped and aligned use case sets the foundation for efficient solution design and minimizes ambiguity during execution."
+    },
+    {
+      "criterion": "Dataset Accessibility & Suitability",
+      "description": "Evaluates the availability, accessibility, and fitness of data required for the AI solution. Includes whether the data is structured, representative, privacy-compliant, and ready to be shared with an MLA for development purposes. Without suitable data, even well-defined use cases cannot be realized."
+    },
+    {
+      "criterion": "Infrastructure & Tooling Readiness",
+      "description": "Measures the readiness of the technical environment needed to support development, testing, and deployment. Includes access to environments (cloud/on-prem), required tools (APIs, dashboards), and permissions. This ensures MLAs can begin work without major delays."
+    },
+    {
+      "criterion": "Execution Feasibility",
+      "description": "Gauges whether the project is realistically scoped for the cohort timeline (4 months), with clear milestones, internal resource commitment, and organizational buy-in. It reflects whether the company is ready to execute efficiently once matched with an MLA."
+    },
+    {
+      "criterion": "NaN",
+      "description": "Level 0"
+    }
+  ],
+  "levels": [
+    {
+      "level": 0,
+      "level_name": "Misaligned",
+      "score_range": {
+        "min": 0.0,
+        "max": 25.0
+      },
+      "score_range_raw": "Misaligned (0 - 25)",
+      "quantifying_statement": "The company has serious gaps that will be unlikely to be addressed through the course of the readiness preparation phase"
+    },
+    {
+      "level": 1,
+      "level_name": "Needs Development",
+      "score_range": {
+        "min": 25.0,
+        "max": 50.0
+      },
+      "score_range_raw": "Needs Development (25-50%)",
+      "quantifying_statement": "The company has significant gaps that may limit progress during execution unless addressed proactively."
+    },
+    {
+      "level": 2,
+      "level_name": "Emerging",
+      "score_range": {
+        "min": 50.0,
+        "max": 70.0
+      },
+      "score_range_raw": "Emerging (50-70%)",
+      "quantifying_statement": "The company has foundational elements in place but requires clear improvements to move toward maturity."
+    },
+    {
+      "level": 3,
+      "level_name": "Mature",
+      "score_range": {
+        "min": 70.0,
+        "max": 90.0
+      },
+      "score_range_raw": "Mature (70-90%)",
+      "quantifying_statement": "The company has strong readiness but could make minor adjustments to enhance execution or scalability."
+    },
+    {
+      "level": 4,
+      "level_name": "Very Mature",
+      "score_range": {
+        "min": 90.0,
+        "max": 100.0
+      },
+      "score_range_raw": "Very Mature (90–100%)",
+      "quantifying_statement": "The company is exceptionally well-prepared in this dimension. Minimal changes are required for readiness."
+    }
+  ],
+  "rubric": [
+    {
+      "criterion": "Use Case Clarity & Alignment",
+      "readiness_by_level": {
+        "0": "Use case is not aligned at all with cohort topic, and there is little to no path towards realignment",
+        "1": "Use case is vague, too broad, or not aligned with business priorities. Confusion around problem statement or success metrics. Major refinement needed.",
+        "2": "High-level use case is defined but lacks scope clarity, a tangible outcome, well-defined success metrics or strong alignment with business goals. Significant refinement needed.",
+        "3": "Clearly articulated use case with good alignment to business needs, some outcome and success metrics defined; moderate refinement needed to make outcome narrow and achievable within the program, as well as tailored and specific success metrics.",
+        "4": "Use case is laser-focused, measurable, business-aligned, and well-articulated across technical and non-technical teams. Little-to-no refinement needed."
+      }
+    },
+    {
+      "criterion": "Dataset Accessibility & Suitability",
+      "readiness_by_level": {
+        "0": "Data set is unavailable or has serious quantity or quality gaps which will prevent it from being usable by the MLAs.",
+        "1": "Data is available but is siloed, or inaccessible. Ownership unclear. Privacy, quantity, quality, or compliance risks are high.",
+        "2": "Data exists and is partially accessible, but gaps exist in quantity, permissions, structure, or suitability. Company may need to share significant additional data, or ground truth annotations.",
+        "3": "Relevant datasets are accessible and fairly clean; minor restructuring or permissions may be needed.",
+        "4": "Fully accessible, high-quality datasets, structured and permissioned appropriately, with ownership and privacy compliance in place."
+      }
+    },
+    {
+      "criterion": "Infrastructure & Tooling Readiness",
+      "readiness_by_level": {
+        "0": "No AI/ML infrastructure in place and no path towards implementation before the program.",
+        "1": "No AI/ML infrastructure with a path towards having it ready in time for the program. Limited awareness of tools, environments, or compute needed.",
+        "2": "Basic tooling available. May require setup for AI work or clarification on team environments.",
+        "3": "AI tooling, dev environments, and basic pipelines exist. Moderate upgrades or onboarding needed.",
+        "4": "Company has mature MLOps practices, cloud/on-prem resources, DevOps support, and familiarity with Vector tooling guidance."
+      }
+    },
+    {
+      "criterion": "Execution Feasibility",
+      "readiness_by_level": {
+        "0": "No execution plan in place, and insufficient internal resources and support to achieve minimum objectives.",
+        "1": "No technical lead identified; resourcing, timelines, or roles unclear. Execution plan is vague or overly ambitious.",
+        "2": "Roles and timelines partially scoped, but team lacks capacity or clarity.",
+        "3": "Feasible execution plan with resourcing mostly in place; some dependencies or uncertainties remain.",
+        "4": "Strong technical leadership, clear timeline, appropriate scope, and cross-functional commitment from the organization."
+      }
+    }
+  ]
+}
